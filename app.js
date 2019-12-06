@@ -22,12 +22,12 @@ inquirer
     {
         type: "input",
         message: "What is your ID?",
-        name: "ID"
+        name: "id"
     },
     {
         type: "input",// change to options
         message: "What is your role?",
-        name: "name"
+        name: "role"
     },
     //Move to second prompt---------------------------
     {
@@ -50,6 +50,8 @@ inquirer
     username = response.username;
     school = response.school;
     //call next function------------------
+    console.log(response); //remove
+    console.log(name, email, id, role, username, school);//remove
 });
 
 
@@ -75,20 +77,6 @@ inquirer
 // 3. Repeat
 
 // 🎗 Remember, you can run the tests at any time with `npm run test`
-
-// It is recommended that you start with a directory structure that looks like this:
-
-// ```
-// lib/           // classes and helper code
-// output/        // rendered output
-// templates/     // HTML template(s)
-// test/          // jest tests
-//   Employee.test.js
-//   Engineer.test.js
-//   Intern.test.js
-//   Manager.test.js
-// app.js         // Runs the application
-// ```
 
 // ### Hints
 
