@@ -3,7 +3,6 @@ const engineer = require('./lib/engineer');
 const intern = require('./lib/intern');
 const manager = require('./lib/manager');
 const fs = require('fs');
-// const html = require(`./lib/html.js`);
 
 var managersData = [];
 var engineersData = [];
@@ -250,4 +249,3 @@ function getMemberData() {
 })};
 
 getMemberData();
-
