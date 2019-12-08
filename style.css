@@ -1,0 +1,51 @@
+* {
+    font-family: 'Alata', sans-serif;
+    background-color: whitesmoke;
+}
+
+.header {
+    width: 100%;
+    margin: 0px;
+    background-color: #5a5a5a;
+}
+
+.title {
+    margin: 0px;
+    padding: 4px 0px;
+}
+
+.row {
+    margin-bottom: 4px;
+}
+
+.card-div {
+    border: 3px solid whitesmoke;
+}
+
+.mgr-card {
+    background-color: #E85A4F;
+}
+
+.eng-card {
+    background-color: #41629f;
+}
+
+.int-card {
+    background-color: #5a5a5a;
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+
+.data-text {
+    background-color: transparent;
+    margin: 0px;
+    padding: 2px 0px;
+}
+
+.data-email {
+    color : whitesmoke;
+}
