@@ -16,7 +16,7 @@ var htmlStart = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Team Profile</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,9 +27,11 @@ var htmlStart = `
         <h1 class="title">My Team</h1>
     </div>  
         <div class="container-fluid" id="main-cont">  
+        <div class="row">
         `;
 
 var htmlEnd = `
+</div>    
 </div>
 </body>
 </html>`;
@@ -50,16 +52,14 @@ function createMgrEl(mgrData) {
 
   const mgrEl =
 `    
-  <div class="row">
-      <div class="col-md-3 card-div mgr-card" id="mgr-row">
+      <div class="col-md-4 card-div mgr-card" id="mgr-row">
           <h3 class="card-title">${name}</h3>
-          <span class="data-text">${email}</span><br>
-          <span class="data-text">ID: ${id}</span><br>
-          <span class="data-text">Role: ${role}</span><br>
-          <span class="data-text">Department: ${department}</span><br>
-          <span class="data-text">${directs} direct reports</span><br>
+          <p class="data-text data-email">${email}</p>
+          <p class="data-text">ID: ${id}</p>
+          <p class="data-text">Role: ${role}</p>
+          <p class="data-text">Department: ${department}</p>
+          <p class="data-text">${directs} direct reports</p>
       </div>    
-  </div>
 `
   htmlString.push(mgrEl);
   }
@@ -77,16 +77,14 @@ function createMgrEl(mgrData) {
   
     const engEl =
   `    
-    <div class="row">
-        <div class="col-md-3 card-div eng-card" id="eng-row">
+        <div class="col-md-4 card-div eng-card" id="eng-row">
             <h3 class="card-title">${name}</h3>
-            <span class="data-text">${email}</span><br>
-            <span class="data-text">ID: ${id}</span><br>
-            <span class="data-text">Role: ${role}</span><br>
-            <span class="data-text">Department: ${github}</span><br>
-            <span class="data-text">${expYears} direct reports</span><br>
+            <p class="data-text data-email">${email}</p>
+            <p class="data-text">ID: ${id}</p>
+            <p class="data-text">Role: ${role}</p>
+            <p class="data-text">Department: ${github}</p>
+            <p class="data-text">${expYears} direct reports</p>
         </div>    
-    </div>
   `
     htmlString.push(engEl);
     }
@@ -104,16 +102,14 @@ function createMgrEl(mgrData) {
     
       const intEl =
     `    
-      <div class="row">
-          <div class="col-md-3 card-div int-card" id="int-row">
+          <div class="col-md-4 card-div int-card" id="int-row">
               <h3 class="card-title">${name}</h3>
-              <span class="data-text">${email}</span><br>
-              <span class="data-text">ID: ${id}</span><br>
-              <span class="data-text">Role: ${role}</span><br>
-              <span class="data-text">Department: ${school}</span><br>
-              <span class="data-text">${gradYear} direct reports</span><br>
+              <p class="data-text data-email">${email}</p>
+              <p class="data-text">ID: ${id}</p>
+              <p class="data-text">Role: ${role}</p>
+              <p class="data-text">Department: ${school}</p>
+              <p class="data-text">${gradYear} direct reports</p>
           </div>    
-      </div>
     `
       htmlString.push(intEl);
       }
